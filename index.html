@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="searchBar">
+        <div class="border border-1 border-white searchBarParentDiv">
+            <input type="text" class="inputfield">
+            <img src="search.jpeg" alt="" width="45px" class="searchIcon">
+        </div>
+    </div>
+
+    <div class="mainContentParent d-flex ">
+
+
+        <div class="leftDiv">
+            <div class="currentTempDiv leftChild p-3 d-flex flex-column gap-2">
+                <h6 class="m-0" id="cityName">City Name</h6>
+                <h5 class="m-0" id="cityTemp">0 &deg;C</h5>
+                <h6 class="m-0" id="skyDesc">Sky Description</h6>
+                <hr class="line">
+                <div class="d-flex gap-2">
+                    <img src ="calendar.jpeg" alt="" width="25px">
+                    <h6 class="m-0">Date</h6>
+                </div>
+                <div class="d-flex gap-2">
+                    <img src ="clock.jpeg";alt="" width="25px">
+                    <h6 class="m-0">Time</h6>
+                </div>
+
+            </div>
+            <div class="nextFiveDays leftChild p-3 d-flex flex-column gap-2">
+                <h6 class="m-0" id="comingFiveDaysTitle">Coming 5 days</h6>
+                <div class="d-flex flex-column gap-1">
+                    <div class="forecastRow d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <img src="./cloud.jpeg" alt="" width="35px">
+                            <h6>7 &deg;C</h6>
+                        </div>
+                        <h6 class="m-0">Saturday</h6>
+                        <h6 class="m-0">25-08-2025</h6>
+                    </div>
+                    <div class="forecastRow d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <img src="./cloud.jpeg" alt="" width="35px">
+                            <h6>7 &deg;C</h6>
+                        </div>
+                        <h6 class="m-0">Saturday</h6>
+                        <h6 class="m-0">25-08-2025</h6>
+                    </div>
+                    <div class="forecastRow d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <img src="./cloud.jpeg" alt="" width="35px">
+                            <h6>7 &deg;C</h6>
+                        </div>
+                        <h6 class="m-0">Saturday</h6>
+                        <h6 class="m-0">25-08-2025</h6>
+                    </div>
+                    <div class="forecastRow d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <img src="./cloud.jpeg" alt="" width="35px">
+                            <h6>7 &deg;C</h6>
+                        </div>
+                        <h6 class="m-0">Saturday</h6>
+                        <h6 class="m-0">25-08-2025</h6>
+                    </div>
+                    <div class="forecastRow d-flex align-items-center justify-content-between">
+                        <div class="d-flex gap-2 align-items-center">
+                            <img src="./cloud.jpeg" alt="" width="35px">
+                            <h6>7 &deg;C</h6>
+                        </div>
+                        <h6 class="m-0">Saturday</h6>
+                        <h6 class="m-0">25-08-2025</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightDiv">
+            <div class="rightRow rowOne d-flex  gap-2 justify-content-between align-items-center">
+                <div class="extraMetric d-flex gap-3">
+                    <img src="wind.jpeg" alt="" width="35px">
+                    <div>
+                        <h6 class="m-0">Metric Name</h6>
+                        <h6 class="m-0">Metric Value</h6>
+                    </div>
+                </div>
+                <div class="extraMetric d-flex gap-3">
+                    <img src="wind.jpeg" alt="" width="35px">
+                    <div>
+                        <h6 class="m-0">Metric Name</h6>
+                        <h6 class="m-0">Metric Value</h6>
+                    </div>
+                </div>
+                <div class="extraMetric d-flex gap-3">
+                    <img src="wind.jpeg" alt="" width="35px">
+                    <div>
+                        <h6 class="m-0">Metric Name</h6>
+                        <h6 class="m-0">Metric Value</h6>
+                    </div>
+                </div>
+                <div class="extraMetric d-flex gap-3">
+                    <img src="wind.jpeg" alt="" width="35px">
+                    <div>
+                        <h6 class="m-0">Metric Name</h6>
+                        <h6 class="m-0">Metric Value</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightRow rowTwo d-flex  gap-2 justify-content-between align-items-center">
+                <div class="AQI rowTwoDiv">
+
+                </div>
+                <div class="sunRise rowTwoDiv">
+
+
+                </div>
+
+            </div>
+            <div class="rightRow"></div>
+
+
+
+
+
+
+        </div>
+       
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>
