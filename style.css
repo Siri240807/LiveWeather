@@ -16,6 +16,10 @@ body{
     justify-content: center;
 }
 
+.inputfield{
+    outline: none;
+}
+
 .searchBarParentDiv{
     width: 50%;
     height: fit-content;
@@ -41,6 +45,7 @@ body{
 
 .mainContentParent{
     height: 90vh;
+    flex-direction: row;
 }
 
 
@@ -91,7 +96,7 @@ body{
 .rightRow{
     height: 27vh;
     width:100%;
-    border: 1px white solid;
+    
 }
 
 .extraMetric{
@@ -109,4 +114,90 @@ body{
     height: 85%;
     border-radius: 15px;
     
+
+}
+
+
+
+
+
+
+.todayTemp{
+    background: rgba(212, 212, 212, 0.4);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+@media only screen and (max-width:767px){
+    .leftDiv{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    
+}
+    .rightDiv{
+        width: 100%;
+    }
+    .mainContentParent{
+    height: 90vh;
+    flex-direction: column;
+    }
+    .searchBar {
+        width: 100%;
+    }
+    .searchBarParentDiv{
+    width: 85%;
+    height: fit-content;
+    position: relative;
+    }
+    .rowOne{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+
+    }
+
+
+
+    .rowTwo{
+        flex-direction: column;
+        gap: 10px;
+        height: 30vh;
+    }
+
+    .rowTwoDiv{
+    background: rgba(212, 212, 212, 0.4);
+    backdrop-filter: blur(15px);
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+    }
+
+    .rowThree{
+        width: 85%;
+        margin: auto;
+    }
+    .todayTempParentDiv{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 15px;
+
+    }
+
 }
