@@ -36,6 +36,13 @@ It provides **real-time weather data**, **hourly forecasts**, **5-day prediction
 
 ---
 
+## 🔗 Live Preview
+Try Breezoo right in your browser (no download needed):
+
+[🌐 Open Breezoo Live](https://breezoo.netlify.app/)
+
+---
+
 ## 🖼️ UI Screenshot
 
 Here’s a preview of the **Live Weather App** 👇  
